@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20231009 17:25:04.486" rpa="false" schemaversion="4">
+<suite id="s1" name="Amazon" source="/Users/josefranciscobahenajavier/Development/robot-scripts/Amazonoptimizado/Tests/amazon.robot">
+<test id="s1-t1" name="buscar producto" line="13">
+<kw name="Comenzar test case" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 17:25:05.051" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.mx/'.</msg>
+<status status="PASS" starttime="20231009 17:25:05.050" endtime="20231009 17:25:10.745"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231009 17:25:10.746" endtime="20231009 17:25:10.746"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20231009 17:25:10.747" endtime="20231009 17:25:10.952"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231009 17:25:13.953" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231009 17:25:10.952" endtime="20231009 17:25:13.953"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:05.050" endtime="20231009 17:25:13.954"/>
+</kw>
+<kw name="buscar producto ferrari" library="Amazon">
+<kw name="buscar productos" library="cargaybusqueda">
+<kw name="entrar a amazon" library="cargaybusqueda">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 17:25:13.957" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.mx/'.</msg>
+<status status="PASS" starttime="20231009 17:25:13.956" endtime="20231009 17:25:19.651"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:13.956" endtime="20231009 17:25:19.651"/>
+</kw>
+<kw name="buscador" library="cargaybusqueda">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>ferrari f50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231009 17:25:19.652" level="INFO">Typing text 'ferrari f50' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20231009 17:25:19.652" endtime="20231009 17:25:20.704"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:19.651" endtime="20231009 17:25:20.704"/>
+</kw>
+<kw name="clic buscar" library="cargaybusqueda">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:25:20.707" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20231009 17:25:20.705" endtime="20231009 17:25:23.312"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:20.704" endtime="20231009 17:25:23.312"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:13.955" endtime="20231009 17:25:23.313"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:13.954" endtime="20231009 17:25:23.313"/>
+</kw>
+<kw name="Terminar test case" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231009 17:25:23.315" endtime="20231009 17:25:23.641"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:23.314" endtime="20231009 17:25:23.641"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" starttime="20231009 17:25:05.049" endtime="20231009 17:25:23.641"/>
+</test>
+<test id="s1-t2" name="Añadir producto al carrito" line="17">
+<kw name="Comenzar test case" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 17:25:23.643" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.mx/'.</msg>
+<status status="PASS" starttime="20231009 17:25:23.643" endtime="20231009 17:25:26.768"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231009 17:25:26.769" endtime="20231009 17:25:26.771"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20231009 17:25:26.772" endtime="20231009 17:25:27.186"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231009 17:25:30.188" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231009 17:25:27.187" endtime="20231009 17:25:30.188"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:23.642" endtime="20231009 17:25:30.188"/>
+</kw>
+<kw name="buscar producto ferrari" library="Amazon">
+<kw name="buscar productos" library="cargaybusqueda">
+<kw name="entrar a amazon" library="cargaybusqueda">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 17:25:30.192" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.mx/'.</msg>
+<status status="PASS" starttime="20231009 17:25:30.191" endtime="20231009 17:25:35.831"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:30.191" endtime="20231009 17:25:35.832"/>
+</kw>
+<kw name="buscador" library="cargaybusqueda">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>ferrari f50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231009 17:25:35.834" level="INFO">Typing text 'ferrari f50' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20231009 17:25:35.833" endtime="20231009 17:25:36.903"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:35.832" endtime="20231009 17:25:36.903"/>
+</kw>
+<kw name="clic buscar" library="cargaybusqueda">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:25:36.905" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20231009 17:25:36.904" endtime="20231009 17:25:39.610"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:36.903" endtime="20231009 17:25:39.610"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:30.190" endtime="20231009 17:25:39.610"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:30.189" endtime="20231009 17:25:39.610"/>
+</kw>
+<kw name="seleccionar producto" library="Amazon">
+<kw name="buscar productos" library="cargaybusqueda">
+<kw name="entrar a amazon" library="cargaybusqueda">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 17:25:39.613" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.mx/'.</msg>
+<status status="PASS" starttime="20231009 17:25:39.612" endtime="20231009 17:25:45.576"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:39.611" endtime="20231009 17:25:45.576"/>
+</kw>
+<kw name="buscador" library="cargaybusqueda">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>ferrari f50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231009 17:25:45.578" level="INFO">Typing text 'ferrari f50' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20231009 17:25:45.577" endtime="20231009 17:25:46.665"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:45.576" endtime="20231009 17:25:46.665"/>
+</kw>
+<kw name="clic buscar" library="cargaybusqueda">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:25:46.666" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20231009 17:25:46.665" endtime="20231009 17:25:48.933"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:46.665" endtime="20231009 17:25:48.933"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:39.611" endtime="20231009 17:25:48.933"/>
+</kw>
+<kw name="carga de ferrari" library="seleccionarferrari">
+<kw name="clic en la imagen" library="seleccionarferrari">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div[1]/span/a/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20231009 17:25:48.934" level="INFO">Clicking image 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div[1]/span/a/div/img'.</msg>
+<status status="PASS" starttime="20231009 17:25:48.934" endtime="20231009 17:25:53.692"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:48.933" endtime="20231009 17:25:53.693"/>
+</kw>
+<kw name="añadir al carrito" library="seleccionarferrari">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:25:53.694" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20231009 17:25:53.693" endtime="20231009 17:25:54.619"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:53.693" endtime="20231009 17:25:54.619"/>
+</kw>
+<kw name="negar proteccion" library="seleccionarferrari">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="attachSiNoCoverage"]/span/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:25:54.620" level="INFO">Clicking button 'xpath=//*[@id="attachSiNoCoverage"]/span/input'.</msg>
+<status status="PASS" starttime="20231009 17:25:54.620" endtime="20231009 17:25:55.375"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:54.620" endtime="20231009 17:25:55.376"/>
+</kw>
+<kw name="Validar agregado" library="seleccionarferrari">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Agregado al carrito</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231009 17:25:55.865" level="INFO">Current page contains text 'Agregado al carrito'.</msg>
+<status status="PASS" starttime="20231009 17:25:55.376" endtime="20231009 17:25:55.865"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:55.376" endtime="20231009 17:25:55.865"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:48.933" endtime="20231009 17:25:55.865"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:39.610" endtime="20231009 17:25:55.865"/>
+</kw>
+<kw name="Terminar test case" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231009 17:25:55.866" endtime="20231009 17:25:56.293"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:55.866" endtime="20231009 17:25:56.293"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" starttime="20231009 17:25:23.642" endtime="20231009 17:25:56.293"/>
+</test>
+<test id="s1-t3" name="ir al carrito" line="22">
+<kw name="Comenzar test case" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 17:25:56.295" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.mx/'.</msg>
+<status status="PASS" starttime="20231009 17:25:56.295" endtime="20231009 17:26:02.795"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.2s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20231009 17:26:02.796" endtime="20231009 17:26:02.799"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20231009 17:26:02.799" endtime="20231009 17:26:03.619"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231009 17:26:06.621" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20231009 17:26:03.619" endtime="20231009 17:26:06.621"/>
+</kw>
+<status status="PASS" starttime="20231009 17:25:56.294" endtime="20231009 17:26:06.622"/>
+</kw>
+<kw name="buscar producto ferrari" library="Amazon">
+<kw name="buscar productos" library="cargaybusqueda">
+<kw name="entrar a amazon" library="cargaybusqueda">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 17:26:06.624" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.mx/'.</msg>
+<status status="PASS" starttime="20231009 17:26:06.623" endtime="20231009 17:26:12.653"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:06.623" endtime="20231009 17:26:12.653"/>
+</kw>
+<kw name="buscador" library="cargaybusqueda">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>ferrari f50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:12.655" level="INFO">Typing text 'ferrari f50' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20231009 17:26:12.654" endtime="20231009 17:26:13.839"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:12.653" endtime="20231009 17:26:13.839"/>
+</kw>
+<kw name="clic buscar" library="cargaybusqueda">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:13.840" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20231009 17:26:13.839" endtime="20231009 17:26:16.792"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:13.839" endtime="20231009 17:26:16.793"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:06.623" endtime="20231009 17:26:16.793"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:06.622" endtime="20231009 17:26:16.793"/>
+</kw>
+<kw name="seleccionar producto" library="Amazon">
+<kw name="buscar productos" library="cargaybusqueda">
+<kw name="entrar a amazon" library="cargaybusqueda">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 17:26:16.795" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.mx/'.</msg>
+<status status="PASS" starttime="20231009 17:26:16.794" endtime="20231009 17:26:23.114"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:16.794" endtime="20231009 17:26:23.114"/>
+</kw>
+<kw name="buscador" library="cargaybusqueda">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>ferrari f50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:23.116" level="INFO">Typing text 'ferrari f50' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20231009 17:26:23.115" endtime="20231009 17:26:24.210"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:23.114" endtime="20231009 17:26:24.210"/>
+</kw>
+<kw name="clic buscar" library="cargaybusqueda">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:24.214" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20231009 17:26:24.212" endtime="20231009 17:26:27.816"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:24.210" endtime="20231009 17:26:27.816"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:16.794" endtime="20231009 17:26:27.817"/>
+</kw>
+<kw name="carga de ferrari" library="seleccionarferrari">
+<kw name="clic en la imagen" library="seleccionarferrari">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div[1]/span/a/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:27.818" level="INFO">Clicking image 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div[1]/span/a/div/img'.</msg>
+<status status="PASS" starttime="20231009 17:26:27.817" endtime="20231009 17:26:32.473"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:27.817" endtime="20231009 17:26:32.473"/>
+</kw>
+<kw name="añadir al carrito" library="seleccionarferrari">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:32.474" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20231009 17:26:32.473" endtime="20231009 17:26:33.671"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:32.473" endtime="20231009 17:26:33.671"/>
+</kw>
+<kw name="negar proteccion" library="seleccionarferrari">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="attachSiNoCoverage"]/span/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:33.673" level="INFO">Clicking button 'xpath=//*[@id="attachSiNoCoverage"]/span/input'.</msg>
+<status status="PASS" starttime="20231009 17:26:33.672" endtime="20231009 17:26:34.584"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:33.672" endtime="20231009 17:26:34.584"/>
+</kw>
+<kw name="Validar agregado" library="seleccionarferrari">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Agregado al carrito</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231009 17:26:35.088" level="INFO">Current page contains text 'Agregado al carrito'.</msg>
+<status status="PASS" starttime="20231009 17:26:34.584" endtime="20231009 17:26:35.088"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:34.584" endtime="20231009 17:26:35.089"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:27.817" endtime="20231009 17:26:35.089"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:16.793" endtime="20231009 17:26:35.089"/>
+</kw>
+<kw name="ir a carrito" library="Amazon">
+<kw name="buscar productos" library="cargaybusqueda">
+<kw name="entrar a amazon" library="cargaybusqueda">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.mx/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231009 17:26:35.091" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.mx/'.</msg>
+<status status="PASS" starttime="20231009 17:26:35.090" endtime="20231009 17:26:42.168"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:35.090" endtime="20231009 17:26:42.168"/>
+</kw>
+<kw name="buscador" library="cargaybusqueda">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=twotabsearchtextbox</arg>
+<arg>ferrari f50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:42.169" level="INFO">Typing text 'ferrari f50' into text field 'id=twotabsearchtextbox'.</msg>
+<status status="PASS" starttime="20231009 17:26:42.169" endtime="20231009 17:26:43.389"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:42.168" endtime="20231009 17:26:43.389"/>
+</kw>
+<kw name="clic buscar" library="cargaybusqueda">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=nav-search-submit-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:43.390" level="INFO">Clicking button 'id=nav-search-submit-button'.</msg>
+<status status="PASS" starttime="20231009 17:26:43.390" endtime="20231009 17:26:45.617"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:43.389" endtime="20231009 17:26:45.617"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:35.089" endtime="20231009 17:26:45.617"/>
+</kw>
+<kw name="carga de ferrari" library="seleccionarferrari">
+<kw name="clic en la imagen" library="seleccionarferrari">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div[1]/span/a/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:45.619" level="INFO">Clicking image 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div[1]/span/a/div/img'.</msg>
+<status status="PASS" starttime="20231009 17:26:45.618" endtime="20231009 17:26:50.035"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:45.618" endtime="20231009 17:26:50.035"/>
+</kw>
+<kw name="añadir al carrito" library="seleccionarferrari">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:50.037" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<status status="PASS" starttime="20231009 17:26:50.035" endtime="20231009 17:26:50.765"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:50.035" endtime="20231009 17:26:50.765"/>
+</kw>
+<kw name="negar proteccion" library="seleccionarferrari">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="attachSiNoCoverage"]/span/input</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231009 17:26:50.766" level="INFO">Clicking button 'xpath=//*[@id="attachSiNoCoverage"]/span/input'.</msg>
+<status status="PASS" starttime="20231009 17:26:50.766" endtime="20231009 17:26:51.536"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:50.766" endtime="20231009 17:26:51.537"/>
+</kw>
+<kw name="Validar agregado" library="seleccionarferrari">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Agregado al carrito</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20231009 17:26:55.911" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231009 17:26:55.912" level="FAIL">Page should have contained text 'Agregado al carrito' but did not.</msg>
+<status status="FAIL" starttime="20231009 17:26:51.537" endtime="20231009 17:26:55.939"/>
+</kw>
+<status status="FAIL" starttime="20231009 17:26:51.537" endtime="20231009 17:26:55.939"/>
+</kw>
+<status status="FAIL" starttime="20231009 17:26:45.617" endtime="20231009 17:26:55.939"/>
+</kw>
+<kw name="ir carrito" library="iracarrito">
+<status status="NOT RUN" starttime="20231009 17:26:55.939" endtime="20231009 17:26:55.939"/>
+</kw>
+<status status="FAIL" starttime="20231009 17:26:35.089" endtime="20231009 17:26:55.940"/>
+</kw>
+<kw name="Terminar test case" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231009 17:26:55.941" endtime="20231009 17:26:56.299"/>
+</kw>
+<status status="PASS" starttime="20231009 17:26:55.940" endtime="20231009 17:26:56.299"/>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" starttime="20231009 17:25:56.294" endtime="20231009 17:26:56.299">Page should have contained text 'Agregado al carrito' but did not.</status>
+</test>
+<doc>esta es alguna informacion basica del SUIT</doc>
+<status status="FAIL" starttime="20231009 17:25:04.488" endtime="20231009 17:26:56.301"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="1" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

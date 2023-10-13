@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20231011 11:22:24.304" rpa="false" schemaversion="4">
+<suite id="s1" name="Escalar" source="/Users/josefranciscobahenajavier/Development/robot-scripts/variables-escalar/Tests/Escalar.robot">
+<test id="s1-t1" name="colocar una variable en un caso de prueba" line="5">
+<kw name="Set Variable" library="BuiltIn">
+<var>${mi_nueva_variable}</var>
+<arg>prueba varibale</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231011 11:22:24.339" level="INFO">${mi_nueva_variable} = prueba varibale</msg>
+<status status="PASS" starttime="20231011 11:22:24.339" endtime="20231011 11:22:24.339"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${mi_nueva_variable}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231011 11:22:24.340" level="INFO">prueba varibale</msg>
+<status status="PASS" starttime="20231011 11:22:24.340" endtime="20231011 11:22:24.340"/>
+</kw>
+<tag>current</tag>
+<status status="PASS" starttime="20231011 11:22:24.339" endtime="20231011 11:22:24.340"/>
+</test>
+<status status="PASS" starttime="20231011 11:22:24.305" endtime="20231011 11:22:24.340"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">current</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Escalar">Escalar</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

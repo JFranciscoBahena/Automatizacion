@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20231009 13:51:48.733" rpa="false" schemaversion="4">
+<suite id="s1" name="AmazonOptimizado" source="/Users/josefranciscobahenajavier/Development/robot-scripts/Amazon/Tests/AmazonOptimizado.robot">
+<test id="s1-t1" name="buscar producto" line="13">
+<kw name="Comenzar test case" type="SETUP">
+<msg timestamp="20231009 13:51:48.782" level="FAIL">No keyword with name 'Comenzar test case' found.</msg>
+<status status="FAIL" starttime="20231009 13:51:48.782" endtime="20231009 13:51:48.782"/>
+</kw>
+<kw name="Terminar test case" type="TEARDOWN">
+<msg timestamp="20231009 13:51:48.784" level="FAIL">No keyword with name 'Terminar test case' found.</msg>
+<status status="FAIL" starttime="20231009 13:51:48.784" endtime="20231009 13:51:48.784">No keyword with name 'Terminar test case' found.</status>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" starttime="20231009 13:51:48.779" endtime="20231009 13:51:48.784">Setup failed:
+No keyword with name 'Comenzar test case' found.
+
+Also teardown failed:
+No keyword with name 'Terminar test case' found.</status>
+</test>
+<test id="s1-t2" name="Añadir producto al carrito" line="17">
+<kw name="Comenzar test case" type="SETUP">
+<msg timestamp="20231009 13:51:48.787" level="FAIL">No keyword with name 'Comenzar test case' found.</msg>
+<status status="FAIL" starttime="20231009 13:51:48.786" endtime="20231009 13:51:48.787"/>
+</kw>
+<kw name="Terminar test case" type="TEARDOWN">
+<msg timestamp="20231009 13:51:48.789" level="FAIL">No keyword with name 'Terminar test case' found.</msg>
+<status status="FAIL" starttime="20231009 13:51:48.788" endtime="20231009 13:51:48.789">No keyword with name 'Terminar test case' found.</status>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" starttime="20231009 13:51:48.784" endtime="20231009 13:51:48.789">Setup failed:
+No keyword with name 'Comenzar test case' found.
+
+Also teardown failed:
+No keyword with name 'Terminar test case' found.</status>
+</test>
+<test id="s1-t3" name="ir al carrito" line="22">
+<kw name="Comenzar test case" type="SETUP">
+<msg timestamp="20231009 13:51:48.792" level="FAIL">No keyword with name 'Comenzar test case' found.</msg>
+<status status="FAIL" starttime="20231009 13:51:48.792" endtime="20231009 13:51:48.792"/>
+</kw>
+<kw name="Terminar test case" type="TEARDOWN">
+<msg timestamp="20231009 13:51:48.795" level="FAIL">No keyword with name 'Terminar test case' found.</msg>
+<status status="FAIL" starttime="20231009 13:51:48.795" endtime="20231009 13:51:48.795">No keyword with name 'Terminar test case' found.</status>
+</kw>
+<tag>smoke</tag>
+<status status="FAIL" starttime="20231009 13:51:48.789" endtime="20231009 13:51:48.795">Setup failed:
+No keyword with name 'Comenzar test case' found.
+
+Also teardown failed:
+No keyword with name 'Terminar test case' found.</status>
+</test>
+<doc>esta es alguna informacion basica del SUIT</doc>
+<status status="FAIL" starttime="20231009 13:51:48.735" endtime="20231009 13:51:48.796"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="3" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="AmazonOptimizado">AmazonOptimizado</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231009 13:51:48.777" level="ERROR">Error in file '/Users/josefranciscobahenajavier/Development/robot-scripts/Amazon/Tests/AmazonOptimizado.robot' on line 3: Resource file 'Resources/Common.robot' does not exist.</msg>
+<msg timestamp="20231009 13:51:48.777" level="ERROR">Error in file '/Users/josefranciscobahenajavier/Development/robot-scripts/Amazon/Tests/AmazonOptimizado.robot' on line 4: Resource file 'Resources/Amazon.robot' does not exist.</msg>
+</errors>
+</robot>

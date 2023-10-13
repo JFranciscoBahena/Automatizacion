@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20231011 12:43:50.490" rpa="false" schemaversion="4">
+<suite id="s1" name="Lista2" source="/Users/josefranciscobahenajavier/Development/robot-scripts/Lista-Variable/Tests/lista2.robot">
+<test id="s1-t1" name="demostracion de variable" line="6">
+<kw name="Log" library="BuiltIn">
+<arg>${mi_variable}[0]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231011 12:43:50.536" level="INFO">prueba1</msg>
+<status status="PASS" starttime="20231011 12:43:50.535" endtime="20231011 12:43:50.536"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${mi_variable}[1]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231011 12:43:50.536" level="INFO">prueba2</msg>
+<status status="PASS" starttime="20231011 12:43:50.536" endtime="20231011 12:43:50.536"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${mi_variable}[2]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231011 12:43:50.537" level="INFO">prueba3</msg>
+<status status="PASS" starttime="20231011 12:43:50.537" endtime="20231011 12:43:50.537"/>
+</kw>
+<status status="PASS" starttime="20231011 12:43:50.535" endtime="20231011 12:43:50.537"/>
+</test>
+<test id="s1-t2" name="demostracion de variable 2" line="11">
+<kw name="Set Variable" library="BuiltIn">
+<var>${mi_lista_variable}</var>
+<arg>item 1</arg>
+<arg>item 2</arg>
+<arg>item 3</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20231011 12:43:50.538" level="INFO">${mi_lista_variable} = ['item 1', 'item 2', 'item 3']</msg>
+<status status="PASS" starttime="20231011 12:43:50.537" endtime="20231011 12:43:50.538"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${mi_lista_variable}[0]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231011 12:43:50.538" level="INFO">item 1</msg>
+<status status="PASS" starttime="20231011 12:43:50.538" endtime="20231011 12:43:50.538"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${mi_lista_variable}[1]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231011 12:43:50.538" level="INFO">item 2</msg>
+<status status="PASS" starttime="20231011 12:43:50.538" endtime="20231011 12:43:50.538"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${mi_lista_variable}[2]</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231011 12:43:50.539" level="INFO">item 3</msg>
+<status status="PASS" starttime="20231011 12:43:50.539" endtime="20231011 12:43:50.539"/>
+</kw>
+<status status="PASS" starttime="20231011 12:43:50.537" endtime="20231011 12:43:50.539"/>
+</test>
+<status status="PASS" starttime="20231011 12:43:50.493" endtime="20231011 12:43:50.539"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Lista2">Lista2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

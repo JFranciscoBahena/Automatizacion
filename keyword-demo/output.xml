@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20231009 17:48:37.725" rpa="false" schemaversion="4">
+<suite id="s1" name="Demo" source="/Users/josefranciscobahenajavier/Development/robot-scripts/keyword-demo/demo.robot">
+<test id="s1-t1" name="Test case 1" line="7">
+<kw name="Do Something">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing something...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231009 17:48:37.776" level="INFO">I am doing something...</msg>
+<status status="PASS" starttime="20231009 17:48:37.776" endtime="20231009 17:48:37.776"/>
+</kw>
+<status status="PASS" starttime="20231009 17:48:37.775" endtime="20231009 17:48:37.776"/>
+</kw>
+<kw name="Do Something Else">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing something else...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231009 17:48:37.776" level="INFO">I am doing something else...</msg>
+<status status="PASS" starttime="20231009 17:48:37.776" endtime="20231009 17:48:37.776"/>
+</kw>
+<status status="PASS" starttime="20231009 17:48:37.776" endtime="20231009 17:48:37.776"/>
+</kw>
+<status status="PASS" starttime="20231009 17:48:37.775" endtime="20231009 17:48:37.776"/>
+</test>
+<test id="s1-t2" name="Test case 2" line="11">
+<kw name="Do Another Thing">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing another thing...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231009 17:48:37.777" level="INFO">I am doing another thing...</msg>
+<status status="PASS" starttime="20231009 17:48:37.777" endtime="20231009 17:48:37.777"/>
+</kw>
+<status status="PASS" starttime="20231009 17:48:37.777" endtime="20231009 17:48:37.777"/>
+</kw>
+<kw name="Do Something Else">
+<kw name="Log" library="BuiltIn">
+<arg>I am doing something else...</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231009 17:48:37.778" level="INFO">I am doing something else...</msg>
+<status status="PASS" starttime="20231009 17:48:37.778" endtime="20231009 17:48:37.778"/>
+</kw>
+<status status="PASS" starttime="20231009 17:48:37.777" endtime="20231009 17:48:37.778"/>
+</kw>
+<status status="PASS" starttime="20231009 17:48:37.777" endtime="20231009 17:48:37.778"/>
+</test>
+<status status="PASS" starttime="20231009 17:48:37.734" endtime="20231009 17:48:37.778"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

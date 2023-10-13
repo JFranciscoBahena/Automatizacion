@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20231011 18:40:41.213" rpa="false" schemaversion="4">
+<suite id="s1" name="Amazon" source="/Users/josefranciscobahenajavier/Development/robot-scripts/Amazon-raw steps/Tests/Amazon.robot">
+<test id="s1-t1" name="User must sign in to check out" line="13">
+<kw name="Abrir navegador" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231011 18:40:41.485" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20231011 18:40:41.485" endtime="20231011 18:40:43.760"/>
+</kw>
+<status status="PASS" starttime="20231011 18:40:41.484" endtime="20231011 18:40:43.760"/>
+</kw>
+<kw name="carga pagina" library="Amazon">
+<kw name="carga" library="carga">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231011 18:40:43.762" level="INFO">Opening url 'https://www.amazon.com/'</msg>
+<status status="PASS" starttime="20231011 18:40:43.762" endtime="20231011 18:40:47.534"/>
+</kw>
+<status status="PASS" starttime="20231011 18:40:43.761" endtime="20231011 18:40:47.534"/>
+</kw>
+<status status="PASS" starttime="20231011 18:40:43.760" endtime="20231011 18:40:47.534"/>
+</kw>
+<kw name="busca producto" library="Amazon">
+<kw name="busca producto" library="buscarferrari">
+<kw name="ingresar texto" library="buscarferrari">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ingresa_texto}</arg>
+<arg>${producto}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231011 18:40:47.538" level="INFO">Typing text 'ferrari 548' into text field 'xpath=//*[@id="twotabsearchtextbox"]'.</msg>
+<status status="PASS" starttime="20231011 18:40:47.535" endtime="20231011 18:40:48.243"/>
+</kw>
+<status status="PASS" starttime="20231011 18:40:47.535" endtime="20231011 18:40:48.243"/>
+</kw>
+<kw name="clic boton buscar" library="buscarferrari">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${boton_buscar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231011 18:40:48.244" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20231011 18:40:48.243" endtime="20231011 18:40:50.408"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>27 resultados para "ferrari 548"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<msg timestamp="20231011 18:40:56.064" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-46.png"&gt;&lt;img src="selenium-screenshot-46.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231011 18:40:56.064" level="FAIL">Text '27 resultados para "ferrari 548"' did not appear in 5 seconds.</msg>
+<status status="FAIL" starttime="20231011 18:40:50.408" endtime="20231011 18:40:56.069"/>
+</kw>
+<status status="FAIL" starttime="20231011 18:40:48.243" endtime="20231011 18:40:56.069"/>
+</kw>
+<status status="FAIL" starttime="20231011 18:40:47.535" endtime="20231011 18:40:56.070"/>
+</kw>
+<status status="FAIL" starttime="20231011 18:40:47.534" endtime="20231011 18:40:56.070"/>
+</kw>
+<kw name="Cerrar navegador" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231011 18:40:56.070" endtime="20231011 18:40:56.553"/>
+</kw>
+<status status="PASS" starttime="20231011 18:40:56.070" endtime="20231011 18:40:56.553"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20231011 18:40:41.484" endtime="20231011 18:40:56.553">Text '27 resultados para "ferrari 548"' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t2" name="User must sign in to check out 2" line="19">
+<kw name="Abrir navegador" library="Common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${navegador}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231011 18:40:56.556" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20231011 18:40:56.555" endtime="20231011 18:40:58.730"/>
+</kw>
+<status status="PASS" starttime="20231011 18:40:56.554" endtime="20231011 18:40:58.731"/>
+</kw>
+<kw name="carga pagina" library="Amazon">
+<kw name="carga" library="carga">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${url}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20231011 18:40:58.732" level="INFO">Opening url 'https://www.amazon.com/'</msg>
+<status status="PASS" starttime="20231011 18:40:58.732" endtime="20231011 18:41:02.186"/>
+</kw>
+<status status="PASS" starttime="20231011 18:40:58.732" endtime="20231011 18:41:02.187"/>
+</kw>
+<status status="PASS" starttime="20231011 18:40:58.731" endtime="20231011 18:41:02.187"/>
+</kw>
+<kw name="busca producto" library="Amazon">
+<kw name="busca producto" library="buscarferrari">
+<kw name="ingresar texto" library="buscarferrari">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ingresa_texto}</arg>
+<arg>${producto}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231011 18:41:02.189" level="INFO">Typing text 'ferrari 548' into text field 'xpath=//*[@id="twotabsearchtextbox"]'.</msg>
+<status status="PASS" starttime="20231011 18:41:02.188" endtime="20231011 18:41:02.816"/>
+</kw>
+<status status="PASS" starttime="20231011 18:41:02.188" endtime="20231011 18:41:02.816"/>
+</kw>
+<kw name="clic boton buscar" library="buscarferrari">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${boton_buscar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231011 18:41:02.817" level="INFO">Clicking button 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20231011 18:41:02.816" endtime="20231011 18:41:04.671"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>27 resultados para "ferrari 548"</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20231011 18:41:04.671" endtime="20231011 18:41:04.696"/>
+</kw>
+<status status="PASS" starttime="20231011 18:41:02.816" endtime="20231011 18:41:04.696"/>
+</kw>
+<status status="PASS" starttime="20231011 18:41:02.187" endtime="20231011 18:41:04.696"/>
+</kw>
+<status status="PASS" starttime="20231011 18:41:02.187" endtime="20231011 18:41:04.696"/>
+</kw>
+<kw name="selecconar ferrari" library="Amazon">
+<kw name="selecciona producto" library="seleccionarferrari">
+<kw name="Clic en imagen" library="seleccionarferrari">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div[1]/span/a/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20231011 18:41:04.697" level="INFO">Clicking image 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[1]/div[1]/div[2]/div/div/div/div/div[1]/span/a/div/img'.</msg>
+<status status="PASS" starttime="20231011 18:41:04.696" endtime="20231011 18:41:09.302"/>
+</kw>
+<status status="PASS" starttime="20231011 18:41:04.696" endtime="20231011 18:41:09.302"/>
+</kw>
+<kw name="clic en agregar" library="seleccionarferrari">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=add-to-cart-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231011 18:41:09.303" level="INFO">Clicking button 'id=add-to-cart-button'.</msg>
+<msg timestamp="20231011 18:41:09.967" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-47.png"&gt;&lt;img src="selenium-screenshot-47.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231011 18:41:09.968" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=117.0.5938.149)
+Stacktrace:
+0   chromedriver                        0x000000010fce2018 chromedriver + 5042200
+1   chromedriver                        0x000000010fcd9743 chromedriver + 5007171
+2   chromedriver                        0x000000010f8803b6 chromedriver + 447414
+3   chromedriver                        0x000000010f8d0aaf chromedriver + 776879
+4   chromedriver                        0x000000010f8c334a chromedriver + 721738
+5   chromedriver                        0x000000010f8f6662 chromedriver + 931426
+6   chromedriver                        0x000000010f8c2bc8 chromedriver + 719816
+7   chromedriver                        0x000000010f8f681e chromedriver + 931870
+8   chromedriver                        0x000000010f912641 chromedriver + 1046081
+9   chromedriver                        0x000000010f8f6433 chromedriver + 930867
+10  chromedriver                        0x000000010f8c1062 chromedriver + 712802
+11  chromedriver                        0x000000010f8c228e chromedriver + 717454
+12  chromedriver                        0x000000010fca3db9 chromedriver + 4787641
+13  chromedriver                        0x000000010fca8f6d chromedriver + 4808557
+14  chromedriver                        0x000000010fcafec2 chromedriver + 4837058
+15  chromedriver                        0x000000010fca9c9d chromedriver + 4811933
+16  chromedriver                        0x000000010fc7befc chromedriver + 4624124
+17  chromedriver                        0x000000010fcc8898 chromedriver + 4937880
+18  chromedriver                        0x000000010fcc8a50 chromedriver + 4938320
+19  chromedriver                        0x000000010fcd937e chromedriver + 5006206
+20  libsystem_pthread.dylib             0x00007ff8064881d3 _pthread_start + 125
+21  libsystem_pthread.dylib             0x00007ff806483bd3 thread_start + 15
+</msg>
+<status status="FAIL" starttime="20231011 18:41:09.302" endtime="20231011 18:41:09.983"/>
+</kw>
+<status status="FAIL" starttime="20231011 18:41:09.302" endtime="20231011 18:41:09.983"/>
+</kw>
+<kw name="Verificar pagina" library="seleccionarferrari">
+<status status="NOT RUN" starttime="20231011 18:41:09.983" endtime="20231011 18:41:09.983"/>
+</kw>
+<status status="FAIL" starttime="20231011 18:41:04.696" endtime="20231011 18:41:09.983"/>
+</kw>
+<status status="FAIL" starttime="20231011 18:41:04.696" endtime="20231011 18:41:09.984"/>
+</kw>
+<kw name="Procesar compra" library="Amazon">
+<status status="NOT RUN" starttime="20231011 18:41:09.984" endtime="20231011 18:41:09.984"/>
+</kw>
+<kw name="Cerrar navegador" library="Common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20231011 18:41:09.984" endtime="20231011 18:41:10.424"/>
+</kw>
+<status status="PASS" starttime="20231011 18:41:09.984" endtime="20231011 18:41:10.424"/>
+</kw>
+<doc>This is some basic info about the test</doc>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20231011 18:40:56.554" endtime="20231011 18:41:10.424">ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=117.0.5938.149)
+Stacktrace:
+0   chromedriver                        0x000000010fce2018 chromedriver + 5042200
+1   chromedriver                        0x000000010fcd9743 chromedriver + 5007171
+2   chromedriver                        0x000000010f8803b6 chromedriver + 447414
+3   chromedriver                        0x000000010f8d0aaf chromedriver + 776879
+4   chromedriver                        0x000000010f8c334a chromedriver + 721738
+5   chromedriver                        0x000000010f8f6662 chromedriver + 931426
+6   chromedriver                        0x000000010f8c2bc8 chromedriver + 719816
+7   chromedriver                        0x000000010f8f681e chromedriver + 931870
+8   chromedriver                        0x000000010f912641 chromedriver + 1...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010f8c228e chromedriver + 717454
+12  chromedriver                        0x000000010fca3db9 chromedriver + 4787641
+13  chromedriver                        0x000000010fca8f6d chromedriver + 4808557
+14  chromedriver                        0x000000010fcafec2 chromedriver + 4837058
+15  chromedriver                        0x000000010fca9c9d chromedriver + 4811933
+16  chromedriver                        0x000000010fc7befc chromedriver + 4624124
+17  chromedriver                        0x000000010fcc8898 chromedriver + 4937880
+18  chromedriver                        0x000000010fcc8a50 chromedriver + 4938320
+19  chromedriver                        0x000000010fcd937e chromedriver + 5006206
+20  libsystem_pthread.dylib             0x00007ff8064881d3 _pthread_start + 125
+21  libsystem_pthread.dylib             0x00007ff806483bd3 thread_start + 15</status>
+</test>
+<doc>este es documento del test suit</doc>
+<status status="FAIL" starttime="20231011 18:40:41.215" endtime="20231011 18:41:10.426"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="2" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Amazon">Amazon</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

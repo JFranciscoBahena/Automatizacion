@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on darwin)" generated="20231011 16:52:07.723" rpa="false" schemaversion="4">
+<suite id="s1" name="Scope" source="/Users/josefranciscobahenajavier/Development/robot-scripts/scope/Tests/scope.robot">
+<test id="s1-t1" name="crear y registrar una variable" line="6">
+<kw name="Log" library="BuiltIn">
+<arg>${MI_VARIABLE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231011 16:52:07.764" level="INFO">alguna informacion prueba 1</msg>
+<status status="PASS" starttime="20231011 16:52:07.763" endtime="20231011 16:52:07.764"/>
+</kw>
+<status status="PASS" starttime="20231011 16:52:07.763" endtime="20231011 16:52:07.764"/>
+</test>
+<test id="s1-t2" name="acceso a una variable" line="9">
+<kw name="Log" library="BuiltIn">
+<arg>${MI_VARIABLE}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231011 16:52:07.765" level="INFO">alguna informacion prueba 1</msg>
+<status status="PASS" starttime="20231011 16:52:07.765" endtime="20231011 16:52:07.765"/>
+</kw>
+<status status="PASS" starttime="20231011 16:52:07.764" endtime="20231011 16:52:07.765"/>
+</test>
+<status status="PASS" starttime="20231011 16:52:07.724" endtime="20231011 16:52:07.765"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Scope">Scope</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
