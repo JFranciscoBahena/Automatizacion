@@ -19,3 +19,14 @@ inicio sesion credenciales validas
     InicioSesion.Verificar pagina cargada inicio sesion
     InicioSesion.credenciales validas    ${email}    ${conraseña}
     clientes.verificar pagina cargada cliente
+
+
+Agregar nuevo cliente
+    clientes.click agregar cliente
+    añadircliente.verificar pagina cargada cliente
+    añadircliente.agregar nuevo cliente
+    clientes.verificar pagina cargada cliente se registro con exito
+
+Cerrar sesion
+    navegacionSuperior.Clic "Cerrar sesion"
+    CerrarSesion.Verificar pagina cargada cerrar sesion
